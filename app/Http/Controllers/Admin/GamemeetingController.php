@@ -12,5 +12,10 @@ class GamemeetingController extends Controller
     {
         return view ('admin.gamemeeting.create');
     }
+    
+    public function create(Request $request)
+    {
+        return redirect('admin/gamemeeting/create');
+    }
 }
 
