@@ -20,9 +20,15 @@ Route::get('/', function () {
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
      Route::get('gamemeeting/create', 'Admin\GamemeetingController@add');
      Route::post('gamemeeting/create', 'Admin\GamemeetingController@create');
+     Route::get('gamemeeting', 'Admin\GamemeetingController@index');
+     
 });
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 

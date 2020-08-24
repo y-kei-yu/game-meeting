@@ -33,7 +33,7 @@
             <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
                 <div class="container">
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        {{ config('app.name', 'ゲーム集会所') }}
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collaspse" data-target="#navbarSupportedContent"
                     area-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,7 +67,18 @@
                                         
                                         {{__('Logout') }}
                                     </a>
-                                    
+                                    <a class="dropdown-item" href="{{url('/home')}}">
+                                        
+                                    プロフィール編集
+                                    </a>
+                                    <a class="dropdown-item" href="{{url('/home')}}">
+                                        
+                                    チャット一覧
+                                    </a>
+                                    <a class="dropdown-item" href="{{url('/admin/gamemeeting')}}">
+                                        
+                                    退会
+                                    </a>
                                     <form id="logout-form" action="{{ route('logout') }}"method="POST" style="display: none;">
                                         @csrf
                                     </form>

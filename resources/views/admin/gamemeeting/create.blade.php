@@ -22,7 +22,7 @@
                     <div class="form-group row">
                         <lavel class="col-md-2" for="game name">ゲーム名(game name)</lavel>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="game name" value="{{ old('game name') }}">
+                            <input type="text" class="form-control" name="game_name" value="{{ old('game_name') }}">
                         </div>
                     </div>
                     <div class="form-group row">
